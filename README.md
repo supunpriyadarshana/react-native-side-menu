@@ -56,8 +56,9 @@ class Application extends React.Component {
 | ---- | ---- | ----| ---- |
 | menu | inherited | React.Component | Menu component |
 | isOpen |false | Boolean | Props driven control over menu open state |
-| openMenuOffset | 2/3 of device screen width | Number | Content view left margin if menu is opened |
-| hiddenMenuOffset | none | Number | Content view left margin if menu is hidden |
+| openMenuOffsetPercentage | 2/3 of device screen width as a percentage value | Number | Content view left margin if menu is opened |
+| hiddenMenuOffsetPercentage | none | Number | Content view left margin if menu is hidden as percentage value |
+menu is hidden |
 | edgeHitWidth | none | Number | Edge distance on content view to open side menu, defaults to 60 |
 | toleranceX | none | Number | X axis tolerance |
 | toleranceY | none | Number | Y axis tolerance |
