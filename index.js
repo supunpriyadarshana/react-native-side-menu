@@ -293,9 +293,13 @@ export default class SideMenu extends React.Component {
       </View>
     );
 
+    // IMPORTANT: `drawer-container` testID is used to identify this
+    // element in HTML with a CSS selector which allows us to fix an
+    // IE 11 bug when running the drawer on web.
     return (
       <View
-        style={styles.container}
+        style={styles.container} 
+        testID={'drawer-container'}
       >
         {menu}
         {this.getContentView()}
