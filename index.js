@@ -113,9 +113,11 @@ export default class SideMenu extends React.Component {
     this.onPanResponderRelease = this.handlePanResponderEnd.bind(this);
     this.onPanResponderTerminate = this.handlePanResponderEnd.bind(this);
 
+    const currentDeviceScreen = Dimensions.get('window');
+    
     this.state = {
-      width: deviceScreen.width,
-      height: deviceScreen.height,
+      width: currentDeviceScreen.width,
+      height: currentDeviceScreen.height,
       openMenuOffsetPercentage,
       openMenuOffset,
       hiddenMenuOffsetPercentage,
